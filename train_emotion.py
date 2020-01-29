@@ -103,12 +103,12 @@ if __name__ == '__main__':
 
     if cuda:
         model.cuda()
-    if emotion=='anger': loss_weights = torch.FloatTensor([1/0.3097, 1/0.6903])
-    elif emotion=='happiness': loss_weights = torch.FloatTensor([1/0.3097, 1/0.6903])
-    elif emotion=='sadness': loss_weights = torch.FloatTensor([1/0.3097, 1/0.6903])
-    elif emotion=='disgust': loss_weights = torch.FloatTensor([1/0.3097, 1/0.6903])
-    elif emotion=='fear': loss_weights = torch.FloatTensor([1/0.3097, 1/0.6903])
-    elif emotion=='surprise': loss_weights = torch.FloatTensor([1/0.3097, 1/0.6903])
+    if emotion=='anger': loss_weights = torch.FloatTensor([1/0.2128, 1/0.7872])
+    elif emotion=='happiness': loss_weights = torch.FloatTensor([1/0.5381, 1/0.0.4619])
+    elif emotion=='sadness': loss_weights = torch.FloatTensor([1/0.2546, 1/0.7454])
+    elif emotion=='disgust': loss_weights = torch.FloatTensor([1/0.1699, 1/0.8301])
+    elif emotion=='fear': loss_weights = torch.FloatTensor([1/0.0816, 1/0.9184])
+    elif emotion=='surprise': loss_weights = torch.FloatTensor([1/0.0986, 1/0.9014])
     if args.class_weight:
         loss_function  = MaskedNLLLoss(loss_weights.cuda() if cuda else loss_weights)
     else:
