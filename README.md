@@ -10,6 +10,7 @@ The repository also contains a `.txt` requirements file consisting of all depend
     >> pip install -r requirements.txt
 
 The model captures context and speaker states by monitoring three sequential representations and finally fusing the representations from all modalities using a pairwise fusion mechanism  
+![dialogue](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/dialogue.jpg)
 
 Further model details regarding training, inference and architecture can be found in the paper linked above
 
