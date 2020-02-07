@@ -36,7 +36,7 @@ The dictionary keys for any example would be -
     
 where,
 * ID is the identification number for the video
-* speakers is a list consisting of a label indicating which one of the speakers spoke the corresponding utterance (example : If conversation alternated between A and B for a total of 4 utterances, the list would be ['A', 'B', 'A', 'B'])
+* speakers is a list consisting of a label indicating which one of the speakers spoke the corresponding utterance (for example - If conversation alternated between A and B for a total of 4 utterances, the list would be ['A', 'B', 'A', 'B'])
 * labels are the corresponding labels for that utterance
 * text_feat are text features (GLoVe embeddings in our case)
 * audio_feat are audio features (OpenSMILE features in our case)
