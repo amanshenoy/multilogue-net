@@ -49,7 +49,6 @@ where,
 The model takes roughly 15 seconds/epoch for `train_emotion.py` and `train_categorical.py` and 40 seconds/epoch for `train_regression.py` on CMU-MOSEI, on a single NVIDIA GV100 and achieves state-of-the-art performance (at the time of writing) on emotion recognition, binary sentiment prediction, and sentiment regression problems.
   
 ![table](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/emotion-results.jpg)
-Results of multilogue-net trained on emotion labels of MOSEI
 
 The following work done as a part of an internship project at NVIDIA Graphics, Bengaluru
 
