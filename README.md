@@ -29,8 +29,7 @@ Depending on the kind of prediction desired.
 
 The CMU-MOSEI dataset has single party conversation data from YouTube of 2199 opinion video clips with labels available for sentiment within the real range -3 to 3, and for emotion labels for each utterance. The binary sentiment labels are obtained by considering sentiment >= 0 to be 1 and all others to be 0.   
 
-The model can further be extended onto other datasets for any number of parties in the conversation. The dataloader stores the data for each example in a particular format.   
-The dictionary keys for any example would be -  
+The model can further be extended onto other datasets for any number of parties in the conversation. The dataloader stores the data for each example in a particular format. The dictionary keys for any example would be -    
 
     [ID, speakers, labels, text_feat, audio_feat, visual_feat, sentence_in_text, train, test]
     
