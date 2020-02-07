@@ -1,9 +1,5 @@
 ## Multilogue-net
-This repository contains the official pytorch implemention for the paper [Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition](amanshenoy.github.io).   
-  
-![dialogue](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/dialogue.jpg)
-
-The reposiory contains a model file, a dataloader file and, training scripts and data to be able to train the model on the [CMU-MOSEI Dataset](https://www.aclweb.org/anthology/P18-1208/) for -   
+This repository contains the official pytorch implemention for the paper [Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition](amanshenoy.github.io). The reposiory contains a model file, a dataloader file and, training scripts and data to be able to train the model on the [CMU-MOSEI Dataset](https://www.aclweb.org/anthology/P18-1208/) for -   
 
 * Binary Sentiment labels  
 * Emotion labels (One of 6 emotions)
@@ -15,7 +11,7 @@ The repository also contains a `.txt` requirements file consisting of all depend
 
 The model captures context and speaker states by monitoring three sequential representations and finally fusing the representations from all modalities using a pairwise fusion mechanism    
   
-![update](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/state-update.jpg)
+![dialogue](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/dialogue.jpg)
 
 Further model details regarding training, inference and architecture can be found in the paper linked above
 
