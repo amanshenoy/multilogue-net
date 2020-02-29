@@ -83,13 +83,14 @@ if __name__ == '__main__':
     writer = SummaryWriter(args.log_dir)
     print(args)
     
+    # Run on either GPU or CPU
     args.cuda = torch.cuda.is_available() and not args.no_cuda
     if args.cuda:
         print('Running on GPU')
     else:
         print('Running on CPU')
-
     print("Tensorboard logs in " + args.log_dir)
+
     batch_size = args.batch_size
     n_classes  = 2
     cuda       = args.cuda
@@ -97,6 +98,7 @@ if __name__ == '__main__':
     D_m_text, D_m_audio, D_m_video, D_m_context = 300, 384, 35, 300
     D_g, D_p, D_e, D_h, D_a = 150, 150, 100, 100, 100
 
+    # Instantiate model
     model = CategoricalModel(D_m_text, D_m_audio, D_m_video, D_m_context, D_g, D_p, D_e, D_h, n_classes=n_classes, dropout_rec=args.rec_dropout, dropout=args.dropout)
     
     if cuda:
@@ -107,10 +109,12 @@ if __name__ == '__main__':
     else:
         loss_function = MaskedNLLLoss()
     
+    # Get optimizer and  relevant dataloaders
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.l2)
     train_loader, valid_loader, test_loader = get_MOSEI_loaders('./data/categorical.pkl', valid=0.0, batch_size=batch_size, num_workers=0)
     best_loss, best_label, best_pred, best_mask = None, None, None, None
 
+    # Training loop
     for e in tqdm(range(n_epochs), desc = 'MOSEI Categorical'):
         train_loss, train_acc, _,_,_,train_fscore,_ = train_or_eval_model(model, loss_function, train_loader, e, optimizer, True)
         test_loss, test_acc, test_label, test_pred, test_mask, test_fscore, attentions = train_or_eval_model(model,loss_function, test_loader, e)
