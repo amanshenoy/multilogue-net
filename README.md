@@ -1,6 +1,8 @@
-## Multilogue-net
+<h1 align="center">Particle Swarm Optimizer</h1>
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-cmu-mosei)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-cmu-mosei?p=multilogue-net-a-context-aware-rnn-for-multi) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-mosi)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-mosi?p=multilogue-net-a-context-aware-rnn-for-multi)  
-This repository contains the official pytorch implemention for the paper [Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition](https://arxiv.org/abs/2002.08267). The reposiory contains a model file, a dataloader file and, training scripts and data to be able to train the model on the [CMU-MOSEI Dataset](https://www.aclweb.org/anthology/P18-1208/) for -   
+This repository contains the official pytorch implemention for the paper [Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition](https://arxiv.org/abs/2002.08267).  
+
+The reposiory contains a model file, a dataloader file and, training scripts and data to be able to train the model on the [CMU-MOSEI Dataset](https://www.aclweb.org/anthology/P18-1208/) for -   
 
 * Binary Sentiment labels  
 * Emotion labels (One of 6 emotions)
@@ -12,7 +14,9 @@ The repository also contains a `.txt` requirements file consisting of all depend
 
 The model captures context and speaker states by monitoring three sequential representations and finally fusing the representations from all modalities using a pairwise fusion mechanism    
   
-![dialogue](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/dialogue.jpg)
+| ![dialogue](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/dialogue.jpg) |
+|:-------------------------------------------------------------------------------------------:|
+| Network architecture for updates and classification for two timestamps in dialogue |
 
 Further model details regarding training, inference and architecture can be found in the paper linked above
 
@@ -48,7 +52,6 @@ where,
 
 The model takes roughly 15 seconds/epoch for `train_emotion.py` and `train_categorical.py` and 40 seconds/epoch for `train_regression.py` on CMU-MOSEI, on a single NVIDIA GV100 and achieves state-of-the-art performance (at the time of writing) on emotion recognition, binary sentiment prediction, and sentiment regression problems.
   
-![table](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/emotion-results.jpg)
-
-The following work done as a part of an internship project at NVIDIA Graphics, Bengaluru
-
+| ![table](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/emotion-results.jpg) |
+|:-----------------------------------------------------------------------------------------------:|
+| Results of Multilogue-net on emotion labels on CMU-MOSEI dataset |
