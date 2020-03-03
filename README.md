@@ -1,4 +1,5 @@
-<h1 align="center">Particle Swarm Optimizer</h1>
+<h1 align="center">Multilogue-net</h1>
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-cmu-mosei)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-cmu-mosei?p=multilogue-net-a-context-aware-rnn-for-multi) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-mosi)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-mosi?p=multilogue-net-a-context-aware-rnn-for-multi)  
 This repository contains the official pytorch implemention for the paper [Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition](https://arxiv.org/abs/2002.08267).  
 
