@@ -1,6 +1,5 @@
-## Multilogue-net
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-cmu-mosei)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-cmu-mosei?p=multilogue-net-a-context-aware-rnn-for-multi) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-mosi)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-mosi?p=multilogue-net-a-context-aware-rnn-for-multi) [<img src="https://github.com/chenyangh/DialogueGenerationWithEmotion/blob/master/img/pytorch-logo-dark.png" width="10%">](https://pytorch.org/)
+## Multilogue-net [<img src="https://github.com/chenyangh/DialogueGenerationWithEmotion/blob/master/img/pytorch-logo-dark.png" width="10%">](https://pytorch.org/)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-cmu-mosei)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-cmu-mosei?p=multilogue-net-a-context-aware-rnn-for-multi) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-mosi)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-mosi?p=multilogue-net-a-context-aware-rnn-for-multi) 
 
 This repository contains the official implemention for the paper - [Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition](https://arxiv.org/abs/2002.08267).  
 
