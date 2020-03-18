@@ -1,13 +1,13 @@
 ## Multilogue-net [<img src="https://github.com/chenyangh/DialogueGenerationWithEmotion/blob/master/img/pytorch-logo-dark.png" width="10%">](https://pytorch.org/)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-cmu-mosei)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-cmu-mosei?p=multilogue-net-a-context-aware-rnn-for-multi) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multilogue-net-a-context-aware-rnn-for-multi/multimodal-sentiment-analysis-on-mosi)](https://paperswithcode.com/sota/multimodal-sentiment-analysis-on-mosi?p=multilogue-net-a-context-aware-rnn-for-multi) 
 
-This repository contains the official implemention for the [paper](https://arxiv.org/abs/2002.08267) Multilogue-Net: An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition.  
+This repository contains the official implemention for Multilogue-Net, An inter-modal attentive reccurent neural network architecture for multimodal sentiment analysis and emotion recognition in conversation, whose paper can be found [here](https://arxiv.org/abs/2002.08267).  
 
-The reposiory contains a model file, a dataloader file and, training scripts and data to be able to train the model on the [CMU-MOSEI Dataset](https://www.aclweb.org/anthology/P18-1208/) for -   
+The repository contains files consisting of all relevant models, dataloaders, formatted data, and training scripts to be able to train the model on the [CMU-MOSEI Dataset](https://www.aclweb.org/anthology/P18-1208/) for -   
 
 * Binary Sentiment labels  
 * Emotion labels (One of 6 emotions)
-* Regression outputs (Real range between -3 to +3)  
+* Regression outputs (Real valued range between -3 to +3)  
   
 The repository also contains a `.txt` requirements file consisting of all dependancies required to be able to train and infer the model on any of the labels by running
 
