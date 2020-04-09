@@ -6,16 +6,10 @@ This repository contains the official implemention for the following paper:
 > https://arxiv.org/abs/2002.08267
 >
 > **Abstract:** *Sentiment Analysis and Emotion Detection in conversation is key in a number of real-world applications, with different applications leveraging different kinds of data to be able to achieve reasonably accurate predictions. Multimodal Emotion Detection and Sentiment Analysis can be particularly useful as applications will be able to use specific subsets of the available modalities, as per their available data, to be able to produce relevant predictions. Current systems dealing with Multimodal functionality fail to leverage and capture the context of the conversation through all modalities, the current speaker and listener(s) in the conversation, and the relevance and relationship between the available modalities through an adequate fusion mechanism. In this paper, we propose a recurrent neural network architecture that attempts to take into account all the mentioned drawbacks, and keeps track of the context of the conversation, interlocutor states, and the emotions conveyed by the speakers in the conversation. Our proposed model out performs the state of the art on two benchmark datasets on a variety of accuracy and regression metrics.*  
-
-
-Multilogue-net aims to captures context and speaker states by monitoring three sequential representations and finally fusing the representations from all modalities using a pairwise fusion mechanism.
   
 | ![dialogue](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/dialogue.jpg) |
 |:-------------------------------------------------------------------------------------------:|
-| Network architecture for updates and classification for two timestamps in dialogue |
-
-Further model details regarding training, inference and architecture can be found in the paper linked above. 
-
+| Multilogue-net architecture for updates and classification for two timestamps in dialogue |
 
 ## Resources and Dependancies
 
