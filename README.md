@@ -47,7 +47,7 @@ The model can further be extended onto other datasets for any number of parties 
 
     [ID, speakers, labels, text_feat, audio_feat, visual_feat, sentence_in_text, train, test]
     
-where,
+where each dictionary key is described as follows    
 - ID is the identification number for the video
 - speakers is a list consisting of a label indicating which one of the speakers spoke the corresponding utterance (for example - If conversation alternated between A and B for a total of 4 utterances, the list would be ['A', 'B', 'A', 'B'])
 - labels are the corresponding labels for that utterance
@@ -59,10 +59,10 @@ where,
 
 ## Experimentation and Results 
 
-The model takes roughly 15 seconds/epoch for `train_emotion.py` and `train_categorical.py` and 40 seconds/epoch for `train_regression.py` on CMU-MOSEI, on a single NVIDIA GV100 and achieves state-of-the-art performance (at the time of writing) on emotion recognition, binary sentiment prediction, and sentiment regression problems.
+The model takes roughly 15 seconds/epoch for `train_emotion.py` and `train_categorical.py` and 40 seconds/epoch for `train_regression.py` on CMU-MOSEI, on a single NVIDIA GV100.
   
 | ![table](https://github.com/amanshenoy/multilogue-net/blob/master/diagrams/emotion-results.jpg) |
 |:-----------------------------------------------------------------------------------------------:|
 | Results of Multilogue-net on emotion labels on CMU-MOSEI dataset |
-
-
+    
+At the time of writing Multilogue-net achieves state-of-the-art performance on emotion recognition, binary sentiment prediction, and sentiment regression problems on the CMU-MOSEI dataset.
