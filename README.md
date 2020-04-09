@@ -11,7 +11,7 @@ This repository contains the official implemention for the following paper:
 |:-------------------------------------------------------------------------------------------:|
 | Multilogue-net architecture for updates and classification for two timestamps in dialogue |
 
-## Resources and Dependancies
+## Resources and Dependencies
 
 The datasets used to train all the models were obtained and preprocessed using the CMU-Multimodal SDK which can be found [here](https://github.com/A2Zadeh/CMU-MultimodalSDK).  
 
@@ -29,7 +29,7 @@ The repository also contains a `.txt` requirements file consisting of all depend
 
     >> pip install -r requirements.txt
 
-## Implementation and training
+## Implementation and Training
 
 The repository contains three training scripts as per the desired target variables.  
 
