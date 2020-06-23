@@ -28,7 +28,7 @@ def get_MOSEI_loaders(path, batch_size=128, valid=0.1, num_workers=0, pin_memory
 
 def train_or_eval_model(model,loss_function, dataloader, epoch, optimizer=None, train=False):    
     count = 0
-    losses, preds, labels, masks, alphas_f, alphas_b, vids = [], [], [], [], [], [], [], []
+    losses, preds, labels, masks, alphas, alphas_f, alphas_b, vids = [], [], [], [], [], [], [], []
     assert not train or optimizer!=None
     if train:
         model.train()
@@ -52,6 +52,7 @@ def train_or_eval_model(model,loss_function, dataloader, epoch, optimizer=None, 
             loss.backward()
             optimizer.step()
         else:
+            alphas += alpha
             alphas_f += alpha_f
             alphas_b += alpha_b
             vids += data[-1]
@@ -64,7 +65,7 @@ def train_or_eval_model(model,loss_function, dataloader, epoch, optimizer=None, 
     avg_loss = round(np.sum(losses)/np.sum(masks),4)
     avg_accuracy = round(accuracy_score(labels,preds,sample_weight=masks)*100,2)
     avg_fscore = round(f1_score(labels,preds,sample_weight=masks,average='weighted')*100,2)
-    return avg_loss, avg_accuracy, labels, preds, masks,avg_fscore, [alphas_f, alphas_b, vids]
+    return avg_loss, avg_accuracy, labels, preds, masks,avg_fscore, [alphas, alphas_f, alphas_b, vids]
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser("Trains a categorical model for the emotion label given by --emotion")
@@ -105,7 +106,7 @@ if __name__ == '__main__':
     if cuda:
         model.cuda()
     if emotion=='anger': loss_weights = torch.FloatTensor([1/0.2128, 1/0.7872])
-    elif emotion=='happiness': loss_weights = torch.FloatTensor([1/0.5381, 1/0.4619])
+    elif emotion=='happiness': loss_weights = torch.FloatTensor([1/0.5381, 1/0.0.4619])
     elif emotion=='sadness': loss_weights = torch.FloatTensor([1/0.2546, 1/0.7454])
     elif emotion=='disgust': loss_weights = torch.FloatTensor([1/0.1699, 1/0.8301])
     elif emotion=='fear': loss_weights = torch.FloatTensor([1/0.0816, 1/0.9184])
