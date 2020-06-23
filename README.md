@@ -44,6 +44,7 @@ The scripts require python3.6 or above and can be run as
     
 Depending on the kind of prediction desired. Instructions on how training or inference is to be run for other datasets can be found in the `data` directory. 
 
+Due to issues with git-lfs and the data being lost locally, you can find the `data` directory of a previous commit [here](https://github.com/amanshenoy/multilogue-net/tree/5d6b6ff8b1a26cf0762d6c1ca3a99917e881bf26/data). 
 
 ## Experimentation and Results 
 
