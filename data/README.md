@@ -1,4 +1,5 @@
 ## Generating data for re-training or inference
+Due to a poor internet connection, we were **unable to re-upload the data pickles. They can be taken from one of the previous commits such as [this one](https://github.com/amanshenoy/multilogue-net/tree/5d6b6ff8b1a26cf0762d6c1ca3a99917e881bf26/data)**. 
 
 All datasets used in the paper and in this repository is processed data from the [CMU Multimodal SDK](https://github.com/A2Zadeh/CMU-MultimodalSDK).
 
