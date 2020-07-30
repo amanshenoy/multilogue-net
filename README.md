@@ -67,6 +67,7 @@ The paper in the ACL anthology can be found [here](https://www.aclweb.org/anthol
     address = "Seattle, USA",
     publisher = "Association for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/2020.challengehml-1.3",
+    doi = "10.18653/v1/2020.challengehml-1.3",
     pages = "19--28",
     abstract = "Sentiment Analysis and Emotion Detection in conversation is key in several real-world applications, with an increase in modalities available aiding a better understanding of the underlying emotions. Multi-modal Emotion Detection and Sentiment Analysis can be particularly useful, as applications will be able to use specific subsets of available modalities, as per the available data. Current systems dealing with Multi-modal functionality fail to leverage and capture - the context of the conversation through all modalities, the dependency between the listener(s) and speaker emotional states, and the relevance and relationship between the available modalities. In this paper, we propose an end to end RNN architecture that attempts to take into account all the mentioned drawbacks. Our proposed model, at the time of writing, out-performs the state of the art on a benchmark dataset on a variety of accuracy and regression metrics.",
 }
